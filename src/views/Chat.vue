@@ -193,6 +193,7 @@ export default {
             placeholder-gray-600 
             pl-12 bg-gray-200 
             rounded-md 
-            py-3;
+            py-3
+            focus
 }
 </style>
