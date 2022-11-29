@@ -133,6 +133,9 @@ export default {
 
       message.status = "ok";
       this.myMessage = "";
+
+      document.getElementById("input-message").focus()
+      
     },
 
     sendMessage() {
