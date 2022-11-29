@@ -1,5 +1,5 @@
 <template>
-  <div class="flex div-container justify-center" @keyup.enter="sendMessage">
+  <div class="flex div-container justify-center"  @keypress.enter ="sendMessage">
     <div
       class="
         flex-1
@@ -196,6 +196,5 @@ export default {
             pl-12 bg-gray-200 
             rounded-md 
             py-3
-            focus
 }
 </style>
