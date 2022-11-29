@@ -197,4 +197,7 @@ export default {
             rounded-md 
             py-3
 }
+.div-container {
+    background-image: url(https://preview.redd.it/0bb6dqsiab451.gif?s=b0c65596a54a30708da26669da6e79abf3be1680);
+}
 </style>
