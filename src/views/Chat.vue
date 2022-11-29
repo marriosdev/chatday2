@@ -1,5 +1,5 @@
 <template>
-  <div class="flex div-container justify-center">
+  <div class="flex div-container justify-center" @keyup.enter="sendMessage">
     <div
       class="
         flex-1
