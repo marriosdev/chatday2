@@ -154,7 +154,7 @@ export default {
       this.sendWs(message);
     },
   },
-
+  
   mounted() {
     this.connectWs();
     this.openWs();
