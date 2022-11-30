@@ -64,10 +64,8 @@ export default {
   },
 
   mounted() {
-    let meCss =
-      "px-4 py-2 rounded-lg inline-block rounded-br-none bg-blue-600 text-white ";
-    let otherCss =
-      "px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 text-gray-600";
+    let meCss = "px-4 py-2 rounded-lg inline-block rounded-br-none bg-blue-600 text-white ";
+    let otherCss = "px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 text-gray-600";
 
     if (this.by == "me") {
       this.css = meCss;

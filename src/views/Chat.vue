@@ -1,5 +1,5 @@
 <template>
-  <div class="flex div-container justify-center"  @keypress.enter ="sendMessage">
+  <div class="flex div-container justify-center" @keypress.enter="sendMessage">
     <div
       class="
         flex-1
@@ -108,7 +108,8 @@ export default {
         let message = JSON.parse(event.data);
         message.by = "other";
         message.status = "ok";
-        this.messages.push(message);
+        this.messages.push(message)
+        this.organizeChat();
       };
     },
 
@@ -124,18 +125,18 @@ export default {
         status: "pending",
       };
 
-      this.messages.push(message)
-
+      this.messages.push(message);
       let msgJson = JSON.stringify(message);
-
       let response = this.chat.send(msgJson);
-      console.log(response);
-
       message.status = "ok";
       this.myMessage = "";
+      this.organizeChat();
+    },
 
-      document.getElementById("input-message").focus()
-      
+    organizeChat() {
+      document.getElementById("input-message").focus();
+      let chatScroll = document.getElementById("messages");
+      chatScroll.scrollTop = 50000;
     },
 
     sendMessage() {
@@ -196,9 +197,9 @@ export default {
             placeholder-gray-600 
             pl-12 bg-gray-200 
             rounded-md 
-            py-3
+            py-3;
 }
 .div-container {
-    background-image: url(https://preview.redd.it/0bb6dqsiab451.gif?s=b0c65596a54a30708da26669da6e79abf3be1680);
+  background-repeat: no-repeat;
 }
 </style>
